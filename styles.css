@@ -1,0 +1,291 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero .announcement-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #080808;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(52, 152, 219, 0.7); /* Blue color with 70% opacity */
+    padding: 20px; /* Adjust padding as needed for spacing inside the box */
+    border-radius: 5px; /* Optional: Add rounded corners for a more stylized look */ /* Adjust the font size as needed */
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+.service {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #faf9f9;
+    text-align: center;
+    background-color: rgba(52, 152, 219, 0.7); /* Blue color with 70% opacity */
+    padding: 20px; /* Adjust padding as needed for spacing inside the box */
+    border-radius: 5px; /* Optional: Add rounded corners for a more stylized look */ /* Adjust the font size as needed */
+}
+.section-heading {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px; /* Add padding for better visual appearance */
+    margin-bottom: 20px; /* Add margin to separate sections */
+}
+
+.service-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.history-images {
+    display: flex;
+    justify-content: space-between;
+}
+.history-images img {
+    margin: 0 100px; /* Adjust the value to increase or decrease the space between images */
+}
+.history-images img {
+    width: 35%; /* Adjust as needed */
+}
+
+.highlight-box {
+    position: relative;
+}
+
+.highlight-box p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0a0a0a;
+    text-align: center;
+    z-index: 1;
+    max-width: 80%;
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.9em;
+    background-color: rgba(52, 152, 219, 0.7); /* Blue color with 70% opacity */
+    padding: 20px; /* Adjust padding as needed for spacing inside the box */
+    border-radius: 5px; /* Optional: Add rounded corners for a more stylized look */ /* Adjust the font size as needed */
+}
+.highlight-box {
+    background-color: #3498db; /* Blue background color */
+    padding: 20px; /* Adjust padding as needed for spacing inside the box */
+    border-radius: 5px; /* Optional: Add rounded corners for a more stylized look */
+    color: #fff; /* Set text color to white for better visibility on a dark background */
+}
+#facilities-services .service {
+    position: relative;
+    height: 700px; /* Adjust the height as needed */
+    background-size: cover;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#facilities-services .service img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#hero .blue-container {
+    background-color: #3498db; /* Blue color, adjust as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    text-align: center; /* Center the content */
+    color: #fff; /* Text color, adjust as needed */
+}
+
+#hero .blue-container h2 {
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+#facilities-services .service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#facilities-services .service p {
+    margin: 0;
+}
+
+/* Optional: Hover effect */
+#facilities-services .service:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}
+
+.highlight-box img {
+    width: 90%;
+    height: 500px; /* Adjust the value to set the desired height */
+}
+
+#history {
+    margin-bottom: 70px; /* Adjust the bottom margin as needed */
+}
+
+#mission-vision {
+    margin-top: 70px;
+    margin-bottom: 70px; /* Adjust the top margin as needed */
+}
+
+#facilities-services .service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#facilities-services .service img {
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+/* Add these styles at the end of your existing CSS file */
+
+#contact-form {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
